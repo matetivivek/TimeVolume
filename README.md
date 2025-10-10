@@ -22,12 +22,17 @@ mvn clean package
 
 ## Running the Application
 
+### Option 1: Using the helper script (Linux/Mac)
+```bash
+./run.sh
+```
+
+### Option 2: Using Maven directly
 ```bash
 mvn javafx:run
 ```
 
-Or run the JAR file directly (requires JavaFX runtime):
-
+### Option 3: Run the JAR file (requires JavaFX runtime)
 ```bash
 java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml -jar target/TimeVolume-1.0-SNAPSHOT.jar
 ```
