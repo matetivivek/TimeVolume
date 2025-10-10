@@ -1,10 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Helper script to run the TimeVolume JavaFX application
 
 echo "Building TimeVolume application..."
-mvn clean package -q
 
-if [ $? -eq 0 ]; then
+if mvn clean package -q; then
     echo "Build successful! Starting application..."
     mvn javafx:run
 else
